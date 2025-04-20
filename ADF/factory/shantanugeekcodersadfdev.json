@@ -1,0 +1,9 @@
+{
+	"name": "shantanugeekcodersadfdev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "66c9604d-e2d4-451b-bc61-7616de864809",
+		"tenantId": "cc70dace-b1cd-4f51-9b78-7c7b965b540b"
+	}
+}

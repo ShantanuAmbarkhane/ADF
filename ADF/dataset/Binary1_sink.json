@@ -1,0 +1,44 @@
+{
+	"name": "Binary1_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1sink",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container_sink": {
+				"type": "string"
+			},
+			"directory_sink": {
+				"type": "string"
+			},
+			"File_name_sink": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().File_name_sink",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory_sink",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().container_sink",
+					"type": "Expression"
+				}
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
