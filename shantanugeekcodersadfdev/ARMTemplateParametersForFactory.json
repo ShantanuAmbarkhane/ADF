@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "shantanugeekcodersadfdev"
+		},
+		"AzureDataLakeStorage1sink_properties_typeProperties_url": {
+			"value": "https://geekcodersgen2sink.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage1sink_properties_typeProperties_tenant": {
+			"value": "cc70dace-b1cd-4f51-9b78-7c7b965b540b"
+		},
+		"AzureDataLakeStorage1sink_properties_typeProperties_servicePrincipalId": {
+			"value": "2febd2ee-c998-4793-a33c-9835f53d74da"
+		},
+		"AzureDataLakeStorage1source_properties_typeProperties_url": {
+			"value": "https://geekcodersgen2source1.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage1source_properties_typeProperties_tenant": {
+			"value": "cc70dace-b1cd-4f51-9b78-7c7b965b540b"
+		},
+		"AzureDataLakeStorage1source_properties_typeProperties_servicePrincipalId": {
+			"value": "2febd2ee-c998-4793-a33c-9835f53d74da"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://geekcoderskeyvaultdev.vault.azure.net/"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://www.airlabs.co/api/v9/airlines"
+		}
+	}
+}
