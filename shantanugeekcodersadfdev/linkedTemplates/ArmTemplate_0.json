@@ -199,10 +199,6 @@
 							"value": "@dataset().container_sink",
 							"type": "Expression"
 						}
-					},
-					"compression": {
-						"type": "ZipDeflate",
-						"level": "Optimal"
 					}
 				}
 			},
